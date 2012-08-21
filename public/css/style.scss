@@ -4,6 +4,7 @@
    ========================================================================== */
 
 @import "_style-variables";
+@import "_style-animations.scss";
 @import "_style-normalize";
 @import "fonts/homestead/_style";
 
@@ -16,8 +17,9 @@
    ========================================================================== */
 
 body {
-    background: url(../img/bg/bg-skewed-print.png) repeat $colorBlack;
+    background: url(../img/bg/bg-skewed-print.png) repeat $colorGray;
     font-family: $fontGeorgia;
+    padding: 0 2.5%;
 }
 
 a,
@@ -46,7 +48,7 @@ blockquote {
 
 hr {
     border: 0;
-    border-bottom: 1px solid lighten($colorBlack, 40%);
+    border-bottom: 1px solid lighten($colorGray, 40%);
 }
 
 hr.is-cloud {
@@ -57,24 +59,28 @@ hr.is-cloud {
     margin: 0;
 }
 
-
-
 .container {
-    width: 90%;
-    max-width: 850px;
+    width: 100%;
+    max-width: 800px;
     margin: 0 auto;
     background-color: $colorWhite;
     padding: 0 0 2em 0;
 }
 
 
-header {
-    font-size: 8em;
+.logo {
+    margin-left: 5%;
+
     h1 {
+        font-size: 20em;
         @include mFontHomesteadInline;
         text-align: center;
-        margin: .35em 0 .35em 1%;
+        margin: 0.3em 0 0;
+        line-height: 1em;
 
+        a {
+            color: $colorBlackBlack;
+        }
     }
 }
 
@@ -83,21 +89,33 @@ nav {
 
     ul {
         text-align: center;
-    }
 
-    li {
-        display: inline;
-        padding: 0 1em;
-    }
+        li {
+            padding: 0 0.3em;
+            display: inline;
 
-    a {
-        @include mFontHelveticaNeue;
-        text-transform: uppercase;
-        text-decoration: none;
-        font-weight: bold;
-        color: $colorBlack;
-    }
+            a, a:link, a:visited {
+                @include animate(all, 0.5s);
+                display: inline-block;
+                padding: 0.3em 0.5em;
+                margin-bottom: 0.3em;
 
+                border: 1px solid lighten($colorGreen, 10%);
+
+                @include mFontHomesteadInline;
+                color: $colorWhite;
+                background-color: $colorGreen;
+                text-transform: uppercase;
+                text-decoration: none;
+                font-size: 1.5em;
+            }
+
+            a:hover {
+                background-color: darken($colorGreen, 10%)  !important;
+                border: 1px solid lighten($colorGreen, 10%);
+            }
+        }
+    }
 }
 
 
@@ -106,21 +124,31 @@ article {
     margin: 10% 10% 30% 10%;
 
     header {
+        margin: 0;
+
         h1, h2 {
             @include mFontHomesteadRegular;
-            font-size: 0.4em;
+            font-size: 3em;
             line-height: 1em;
+
+            a {
+                color: $colorBlackBlack !important;
+
+                &:hover {
+                    color: darken($colorGreen, 10%)  !important;
+                }
+            }
         }
     }
 
     p {
         font-size: 1.8em;
         line-height: 1.9em;
-        color: lighten($colorBlack, 10%);
+        color: lighten($colorGray, 10%);
     }
 
     ul {
-        color: lighten($colorBlack, 10%);
+        color: lighten($colorGray, 10%);
         font-size: 1.6em;
     }
 
@@ -148,20 +176,20 @@ article {
 
         h1, h2 {
             @include mFontHomesteadRegular;
-            font-size: 0.6em;
+            font-size: 4em;
             line-height: 1em;
-            text-align: center;
+            text-align: left;
         }
 
         margin: 10% 0 25% 0;
 
-        p, footer {
+        header, p, footer {
             margin-left: 10%;
             margin-right: 10%;
         }
 
         p {
-            color: $colorBlack;
+            color: $colorGray;
         }
     }
 
@@ -169,14 +197,13 @@ article {
         margin: 10% 0 25% 0;
         background-color: $colorGreen;
         padding: 10%;
-
         color: $colorWhite;
 
         h1, h2 {
             @include mFontHomesteadRegular;
-            font-size: 0.6em;
+            font-size: 3em;
             line-height: 1em;
-            text-align: center;
+            text-align: left;
         }
 
         p {
@@ -186,7 +213,6 @@ article {
         time {
             color: lighten($colorGreen, 40%);
         }
-
     }
 
     .l-2-col {
@@ -204,7 +230,7 @@ article {
 
     &.is-about-me {
         p {
-            color: darken($colorBlack, 10%);
+            color: darken($colorGray, 10%);
             font-size: 2.3em;
             line-height: 1.6em;
         }
@@ -223,4 +249,4 @@ footer {
 
 
 //@import "_style-helpers";
-@import "_style-print";
+//@import "_style-print";
