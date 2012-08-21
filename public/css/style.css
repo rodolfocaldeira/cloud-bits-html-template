@@ -359,6 +359,8 @@ article {
   article img,
   article iframe {
     width: 100%; }
+  article iframe.is-youtube {
+    height: 400px; }
   article p.is-rate {
     font-size: 2em;
     text-align: center; }
