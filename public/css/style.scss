@@ -3,10 +3,10 @@
    author: Rodolfo Caldeira me@rodolfocaldeira.com
    ========================================================================== */
 
-@import "_style-variables";
-@import "_style-animations.scss";
-@import "_style-normalize";
 @import "fonts/homestead/_style";
+@import "_style-variables";
+@import "_style-normalize";
+
 
 
 
@@ -59,6 +59,14 @@ hr.is-cloud {
     margin: 0;
 }
 
+
+
+
+
+/* ==========================================================================
+   Layout
+   ========================================================================== */
+
 .container {
     width: 100%;
     max-width: 800px;
@@ -68,8 +76,16 @@ hr.is-cloud {
 }
 
 
+
+
+
+/* ==========================================================================
+   Modules
+   ========================================================================== */
+
+
 .logo {
-    margin-left: 5%;
+    margin-left: 3%;
 
     h1 {
         font-size: 20em;
@@ -83,6 +99,7 @@ hr.is-cloud {
         }
     }
 }
+
 
 nav {
     margin: 6em 0 12em;
@@ -235,7 +252,6 @@ article {
             line-height: 1.6em;
         }
     }
-
 }
 
 
@@ -244,9 +260,3 @@ footer {
     text-align: center;
     font-family: $fontGeorgia;
 }
-
-
-
-
-//@import "_style-helpers";
-//@import "_style-print";
