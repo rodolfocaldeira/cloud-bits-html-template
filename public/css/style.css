@@ -284,20 +284,20 @@ hr.is-cloud {
    Modules
    ========================================================================== */
 .logo {
-  margin-left: 3%; }
+  margin-left: 5%; }
   .logo h1 {
-    font-size: 20em;
+    font-size: 30em;
     font-family: "HomesteadInlineInline", Arial, sans-serif;
     font-weight: normal;
     font-style: normal;
     text-align: center;
-    margin: 0.3em 0 0;
+    margin: 0.05em 0 0;
     line-height: 1em; }
     .logo h1 a {
       color: black; }
 
 nav {
-  margin: 6em 0 12em; }
+  margin: 2em 0 8em; }
   nav ul {
     text-align: center; }
     nav ul li {
@@ -312,18 +312,15 @@ nav {
         display: inline-block;
         padding: 0.3em 0.5em;
         margin-bottom: 0.3em;
-        border: 1px solid #44afb4;
         font-family: "HomesteadInlineInline", Arial, sans-serif;
         font-weight: normal;
         font-style: normal;
-        color: white;
-        background-color: #368b8f;
+        color: black;
         text-transform: uppercase;
         text-decoration: none;
         font-size: 1.5em; }
       nav ul li a:hover {
-        background-color: #28676a !important;
-        border: 1px solid #44afb4; }
+        color: #28676a !important; }
 
 article {
   font-family: Georgia, serif;

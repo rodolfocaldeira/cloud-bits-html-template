@@ -85,24 +85,24 @@ hr.is-cloud {
 
 
 .logo {
-    margin-left: 3%;
+    margin-left: 5%;
 
     h1 {
-        font-size: 20em;
+        font-size: 30em;
         @include mFontHomesteadInline;
         text-align: center;
-        margin: 0.3em 0 0;
+        margin: 0.05em 0 0;
         line-height: 1em;
 
         a {
-            color: $colorBlackBlack;
+            color: $colorBlack;
         }
     }
 }
 
 
 nav {
-    margin: 6em 0 12em;
+    margin: 2em 0 8em;
 
     ul {
         text-align: center;
@@ -117,19 +117,15 @@ nav {
                 padding: 0.3em 0.5em;
                 margin-bottom: 0.3em;
 
-                border: 1px solid lighten($colorGreen, 10%);
-
                 @include mFontHomesteadInline;
-                color: $colorWhite;
-                background-color: $colorGreen;
+                color: $colorBlack;
                 text-transform: uppercase;
                 text-decoration: none;
                 font-size: 1.5em;
             }
 
             a:hover {
-                background-color: darken($colorGreen, 10%)  !important;
-                border: 1px solid lighten($colorGreen, 10%);
+                color: darken($colorGreen, 10%)  !important;
             }
         }
     }
@@ -149,7 +145,7 @@ article {
             line-height: 1em;
 
             a {
-                color: $colorBlackBlack !important;
+                color: $colorBlack !important;
 
                 &:hover {
                     color: darken($colorGreen, 10%)  !important;
