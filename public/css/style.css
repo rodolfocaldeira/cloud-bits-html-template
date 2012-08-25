@@ -283,6 +283,14 @@ hr.is-cloud {
 /* ==========================================================================
    Modules
    ========================================================================== */
+.hero {
+  background: url(../img/bg/bg-header.png) no-repeat center top;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin-bottom: 2em; }
+
 .logo {
   margin-left: 5%; }
   .logo h1 {
@@ -291,13 +299,14 @@ hr.is-cloud {
     font-weight: normal;
     font-style: normal;
     text-align: center;
-    margin: 0.05em 0 0;
+    margin: 0;
     line-height: 1em; }
     .logo h1 a {
-      color: black; }
+      color: white; }
 
 nav {
-  margin: 2em 0 8em; }
+  margin: 1em 0 1em;
+  padding-bottom: 3em; }
   nav ul {
     text-align: center; }
     nav ul li {
@@ -310,12 +319,12 @@ nav {
         -ms-transition: all 0.5s ease-in-out;
         transition: all 0.5s ease-in-out;
         display: inline-block;
-        padding: 0.3em 0.5em;
+        padding: 0.1em 0.5em;
         margin-bottom: 0.3em;
         font-family: "HomesteadInlineInline", Arial, sans-serif;
         font-weight: normal;
         font-style: normal;
-        color: black;
+        color: white;
         text-transform: uppercase;
         text-decoration: none;
         font-size: 1.5em; }
@@ -324,7 +333,7 @@ nav {
 
 article {
   font-family: Georgia, serif;
-  margin: 10% 10% 30% 10%; }
+  margin: 20% 10% 30% 10%; }
   article header {
     margin: 0; }
     article header h1, article header h2 {
@@ -362,7 +371,7 @@ article {
     font-size: 2em;
     text-align: center; }
   article.l-expanded {
-    margin: 10% 0 25% 0; }
+    margin: 25% 0 25% 0; }
     article.l-expanded h1, article.l-expanded h2 {
       font-family: "HomesteadRegularRegular", Arial, sans-serif;
       font-weight: normal;
