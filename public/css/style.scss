@@ -7,19 +7,21 @@
 @import "_style-variables";
 @import "_style-normalize";
 
-
-
-
-
-
 /* ==========================================================================
-   Base
-   ========================================================================== */
+Base
+========================================================================== */
 
 body {
     background: url(../img/bg/bg-skewed-print.png) repeat $colorGray;
     font-family: $fontGeorgia;
     padding: 0 2.5%;
+
+    @media only screen and (max-width: 320px) {
+        background: none;
+        background-color: blue !important;
+        padding: 0;
+        width: 100%;
+    }
 }
 
 a,
@@ -59,13 +61,15 @@ hr.is-cloud {
     margin: 0;
 }
 
-
-
-
+@media only screen and (max-width: 320px) {
+    pre, code, kbd, samp {
+        font-size: 0.9em;
+    }
+}
 
 /* ==========================================================================
-   Layout
-   ========================================================================== */
+Layout
+========================================================================== */
 
 .container {
     width: 100%;
@@ -75,14 +79,9 @@ hr.is-cloud {
     padding: 0 0 2em 0;
 }
 
-
-
-
-
 /* ==========================================================================
-   Modules
-   ========================================================================== */
-
+Modules
+========================================================================== */
 
 .hero {
     background: url(../img/bg/bg-header.png) no-repeat center top;
@@ -92,8 +91,6 @@ hr.is-cloud {
     background-size: cover;
     margin-bottom: 2em;
 }
-
-
 
 .logo {
     margin-left: 5%;
@@ -105,13 +102,18 @@ hr.is-cloud {
         margin: 0;
         line-height: 1em;
 
+        // when the viewport is less then 320px
+        @media only screen and (max-width: 320px) {
+            font-size: 25em;
+            line-height: 0.8em;
+            padding-top: 0.1em;
+        }
+
         a {
             color: $colorWhite;
         }
     }
 }
-
-
 
 nav {
     margin: 1em 0 1em;
@@ -138,17 +140,19 @@ nav {
             }
 
             a:hover {
-                color: darken($colorGreen, 10%)  !important;
+                color: darken($colorGreen, 10%) !important;
             }
         }
     }
 }
 
-
-
 article {
     font-family: $fontGeorgia;
     margin: 20% 10% 30% 10%;
+
+    @media only screen and (max-width: 320px) {
+        margin: 20% 5% 30% 5%;
+    }
 
     header {
         margin: 0;
@@ -158,11 +162,15 @@ article {
             font-size: 3em;
             line-height: 1em;
 
+            @media only screen and (max-width: 320px) {
+                font-size: 2em;
+            }
+
             a {
                 color: $colorBlack !important;
 
                 &:hover {
-                    color: darken($colorGreen, 10%)  !important;
+                    color: darken($colorGreen, 10%) !important;
                 }
             }
         }
@@ -172,11 +180,21 @@ article {
         font-size: 1.8em;
         line-height: 1.9em;
         color: lighten($colorGray, 10%);
+
+        @media only screen and (max-width: 320px) {
+            font-size: 1.5em;
+            font-size: 1.5em;
+        }
     }
 
     ul {
         color: lighten($colorGray, 10%);
         font-size: 1.6em;
+
+        @media only screen and (max-width: 320px) {
+            font-size: 1.3em;
+            margin-left: 5%;
+        }
     }
 
     footer {
@@ -186,6 +204,10 @@ article {
             color: $colorGreen;
             @include mFontHomesteadRegular;
             font-size: 1.5em;
+
+            @media only screen and (max-width: 320px) {
+                font-size: 1.2em;
+            }
         }
     }
 
@@ -195,7 +217,7 @@ article {
     }
 
     iframe.is-youtube {
-      height: 400px;
+        height: 400px;
     }
 
     p.is-rate {
@@ -204,6 +226,7 @@ article {
     }
 
     &.l-expanded {
+        margin: 25% 0 25% 0;
 
         h1, h2 {
             @include mFontHomesteadRegular;
@@ -212,11 +235,14 @@ article {
             text-align: left;
         }
 
-        margin: 25% 0 25% 0;
-
         header, p, footer {
             margin-left: 10%;
             margin-right: 10%;
+
+            @media only screen and (max-width: 320px) {
+                margin-left: 5%;
+                margin-right: 5%;
+            }
         }
 
         p {
@@ -229,6 +255,10 @@ article {
         background-color: $colorGreen;
         padding: 10%;
         color: $colorWhite;
+
+        @media only screen and (max-width: 320px) {
+            padding: 5% 5% 15% 5%;
+        }
 
         h1, h2 {
             @include mFontHomesteadRegular;
@@ -247,27 +277,41 @@ article {
     }
 
     .l-2-col {
-            -webkit-column-count: 2;
-            -webkit-column-gap: 10%;
-            -moz-column-count: 2;
-            -moz-column-gap: 10%;
-            column-count: 2;
-            column-gap: 10%;
+        -webkit-column-count: 2;
+        -webkit-column-gap: 10%;
+        -moz-column-count: 2;
+        -moz-column-gap: 10%;
+        column-count: 2;
+        column-gap: 10%;
 
-            p:first-child {
-                margin-top: 0;
-            }
+        p:first-child {
+            margin-top: 0;
+        }
+
+        @media only screen and (max-width: 320px) {
+            -webkit-column-count: 1;
+            column-count: 1;
+        }
     }
 
     &.is-about-me {
+
+        h2 {
+            font-size: 3em;
+        }
+
         p {
             color: darken($colorGray, 10%);
             font-size: 2.3em;
             line-height: 1.6em;
+
+            @media only screen and (max-width: 320px) {
+                font-size: 1.5em;
+            }
+
         }
     }
 }
-
 
 footer {
     margin: 10%;
