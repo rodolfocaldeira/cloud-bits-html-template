@@ -16,7 +16,7 @@ body {
     font-family: $fontGeorgia;
     padding: 0 2.5%;
 
-    @media only screen and (max-width: 320px) {
+    @media only screen and (max-width: 480px) {
         background: none;
         background-color: blue !important;
         padding: 0;
@@ -61,7 +61,7 @@ hr.is-cloud {
     margin: 0;
 }
 
-@media only screen and (max-width: 320px) {
+@media only screen and (max-width: 480px) {
     pre, code, kbd, samp {
         font-size: 0.9em;
     }
@@ -73,11 +73,11 @@ Layout
 
 .container {
     width: 100%;
-    max-width: 800px;
+    max-width: 799px;
     margin: 0 auto;
     background-color: $colorWhite;
     padding: 0 0 2em 0;
-    background: url(../img/bg/bg-header-subtle.jpg) no-repeat center top #fff;
+
 }
 
 /* ==========================================================================
@@ -86,6 +86,7 @@ Modules
 
 .hero {
     margin-bottom: 2em;
+    background: url(../img/bg/bg-header-subtle.jpg) no-repeat left  top #fff;
 }
 
 
@@ -99,8 +100,8 @@ Modules
         margin: 0;
         line-height: 1em;
 
-        // when the viewport is less then 320px
-        @media only screen and (max-width: 320px) {
+        // when the viewport is less then 480px
+        @media only screen and (max-width: 480px) {
             font-size: 25em;
             line-height: 0.8em;
             padding-top: 0.1em;
@@ -147,7 +148,7 @@ article {
     font-family: $fontGeorgia;
     margin: 20% 10% 30% 10%;
 
-    @media only screen and (max-width: 320px) {
+    @media only screen and (max-width: 480px) {
         margin: 20% 5% 30% 5%;
     }
 
@@ -159,7 +160,7 @@ article {
             font-size: 3em;
             line-height: 1em;
 
-            @media only screen and (max-width: 320px) {
+            @media only screen and (max-width: 480px) {
                 font-size: 2em;
             }
 
@@ -178,7 +179,7 @@ article {
         line-height: 1.9em;
         color: lighten($colorGray, 10%);
 
-        @media only screen and (max-width: 320px) {
+        @media only screen and (max-width: 480px) {
             font-size: 1.5em;
             font-size: 1.5em;
         }
@@ -188,7 +189,7 @@ article {
         color: lighten($colorGray, 10%);
         font-size: 1.6em;
 
-        @media only screen and (max-width: 320px) {
+        @media only screen and (max-width: 480px) {
             font-size: 1.3em;
             margin-left: 5%;
         }
@@ -202,7 +203,7 @@ article {
             @include mFontHomesteadRegular;
             font-size: 1.5em;
 
-            @media only screen and (max-width: 320px) {
+            @media only screen and (max-width: 480px) {
                 font-size: 1.2em;
             }
         }
@@ -236,7 +237,7 @@ article {
             margin-left: 10%;
             margin-right: 10%;
 
-            @media only screen and (max-width: 320px) {
+            @media only screen and (max-width: 480px) {
                 margin-left: 5%;
                 margin-right: 5%;
             }
@@ -253,7 +254,7 @@ article {
         padding: 10%;
         color: $colorWhite;
 
-        @media only screen and (max-width: 320px) {
+        @media only screen and (max-width: 480px) {
             padding: 5% 5% 15% 5%;
         }
 
@@ -285,7 +286,7 @@ article {
             margin-top: 0;
         }
 
-        @media only screen and (max-width: 320px) {
+        @media only screen and (max-width: 480px) {
             -webkit-column-count: 1;
             column-count: 1;
         }
@@ -302,7 +303,7 @@ article {
             font-size: 2.3em;
             line-height: 1.6em;
 
-            @media only screen and (max-width: 320px) {
+            @media only screen and (max-width: 480px) {
                 font-size: 1.5em;
             }
 
