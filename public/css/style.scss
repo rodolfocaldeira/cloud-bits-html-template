@@ -177,7 +177,7 @@ article {
     p {
         font-size: 1.8em;
         line-height: 1.9em;
-        color: lighten($colorGray, 10%);
+        color: $colorGray;
 
         @media only screen and (max-width: 480px) {
             font-size: 1.5em;

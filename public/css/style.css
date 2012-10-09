@@ -365,7 +365,7 @@ article {
   article p {
     font-size: 1.8em;
     line-height: 1.9em;
-    color: #5e5e5e; }
+    color: #444444; }
     @media only screen and (max-width: 480px) {
       article p {
         font-size: 1.5em;
