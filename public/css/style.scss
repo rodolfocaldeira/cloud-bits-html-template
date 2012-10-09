@@ -186,7 +186,7 @@ article {
     }
 
     ul {
-        color: lighten($colorGray, 10%);
+        color: $colorGray;
         font-size: 1.6em;
 
         @media only screen and (max-width: 480px) {
