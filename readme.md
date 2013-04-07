@@ -1,4 +1,6 @@
-Cloud Bits Theme
-================
+Cloud Bits
+==========
 
-These are the styles that power my personal blog, [blog.rodolfocaldeira.com](blog.rodolfocaldeira.com).
+A clean and bold website design that uses big fonts to draw your attention.
+
+These styles are currently powering my personal blog [http://blog.rodolfocaldeira.com](http://blog.rodolfocaldeira.com).
